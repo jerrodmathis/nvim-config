@@ -14,6 +14,13 @@ return {
         lazy = false,
         priority = 1000,
         config = function()
+            require("catppuccin").setup({
+                integrations = {
+                    harpoon = true,
+                    nvimtree = true,
+                    treesitter = true,
+                }
+            })
             vim.cmd([[colorscheme catppuccin-mocha]])
         end
     },
