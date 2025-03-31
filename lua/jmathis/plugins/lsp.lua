@@ -29,7 +29,9 @@ return {
         require("mason-lspconfig").setup({
             ensure_installed = {
                 "eslint",
+                "gopls",
                 "lua_ls",
+                "ts_ls",
             },
             handlers = {
                 function(server_name) -- default handler (optional)
