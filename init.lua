@@ -1,2 +1,1 @@
-require("jmathis")
-
+require 'jmathis'
